@@ -133,3 +133,16 @@ if(num1%2!=0 || num2%2!=0 || num3%2!=0){
 else{
     console.log(false);
 }
+
+/* Questao 10 */
+
+const custo = 100, venda = 200;
+
+lucro = venda - custo - (0.2*custo);
+
+if(lucro<0){
+    console.log("Erro, lucro menor que zero");
+}
+else{
+    console.log(1000*lucro);
+}
