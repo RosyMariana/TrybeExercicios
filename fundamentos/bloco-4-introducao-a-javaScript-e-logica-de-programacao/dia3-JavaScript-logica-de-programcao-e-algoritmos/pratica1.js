@@ -74,7 +74,7 @@ for(let cont = 1; cont<=n; cont+=1){
 
 /* Bonus 1*/
 
-/* let numEspacos, numAst, n=7, contador = 0;
+let numEspacos, numAst, n=7, contador = 0;
 let nImpar = 0;
 
 for(let cont5 = 1; cont5<=n; cont5++){
@@ -111,25 +111,25 @@ for(let cont = 1; cont<=n; cont+=1){
         }
         contador +=1;
     }   
-} */
+} 
 
 /* Bonus 2 */
 
-let n = 23, cont=0;
+// let n = 23, cont=0;
 
-for(let cont2=2; cont2<n; cont2++){
-    if(n%cont2===0){
-        cont+=1;
-    }
-    if(cont!=0){
-        break;
-    }
-}
+// for(let cont2=2; cont2<n; cont2++){
+//     if(n%cont2===0){
+//         cont+=1;
+//     }
+//     if(cont!=0){
+//         break;
+//     }
+// }
 
-console.log(cont)
-if(cont!=0){
-    console.log("O numero nao é primo");
-}
-else{
-    console.log("O numero é primo");
-}
+// console.log(cont)
+// if(cont!=0){
+//     console.log("O numero nao é primo");
+// }
+// else{
+//     console.log("O numero é primo");
+// }
