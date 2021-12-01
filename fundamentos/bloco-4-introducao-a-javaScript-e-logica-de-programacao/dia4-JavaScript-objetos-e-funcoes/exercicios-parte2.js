@@ -105,3 +105,39 @@
     // }
 
     //     console.log(repet(teste));
+
+    /* Exercicio 6 - somatorio */
+
+        // let N = 5;
+
+        // function somatorio(numero){
+
+        //     let resultado = 0;
+        //     for(let cont = 1; cont<=5; cont+=1){
+        //         resultado = resultado + cont;
+        //     }
+        //     return resultado;
+        // }
+
+        // console.log(somatorio(N));
+
+        /* Exercicio 7 */
+        let word = 'joaofernando', ending = 'fernan';
+
+        function final(word, ending){
+            let aux = word.length-1;
+            for(let cont = ending.length-1; cont>-1; cont-=1){
+                if(ending[cont]==word[aux]){
+                    resposta = true;
+                }
+                else{
+                    resposta = false;
+                    return resposta;
+                }
+
+                aux = aux -1;
+            }
+            return resposta;
+        }
+
+        console.log(final(word, ending))
