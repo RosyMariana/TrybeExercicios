@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+</main>
+
+    <script>
+        // acessar o elemento 
+        let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+
+        // acessar o pai do elemento e adicionar cor a ele
+        let pai = elementoOndeVoceEsta.parentElement;
+        pai.style.color = 'pink';
+
+        // acessar o primeiroFilhoDoFilho e adicionar texto a ele
+        const primeiroFilhoDoFilho = elementoOndeVoceEsta.firstElementChild;
+        primeiroFilhoDoFilho.innerText = 'primeiroFilhoDoFilho';
+
+        // acessar o primeiro filho a partir do pai
+        const primeiroFilho = pai.firstElementChild;  // fistElementoChild retorna o primeiro elemento filho
+
+        // acessar o elemento primeiroFilho a partir de elementoOndeVoceEsta
+        const primeiroFilho2 = elementoOndeVoceEsta.previousElementSibling;  //previousElementSibling retorna o elemento anterior 
+
+        // acessar o texto Atençao! a partir do elemento OndeVoceEsta
+        const textElement = elementoOndeVoceEsta.nextSibling;// retornsa o nó imediamente apos o no especificado no mesmo nivel da avore
+
+        // acessar o terceiroFiho a aprtir de elementoOndeVOceEsta
+        const terceiroFiho = elementoOndeVoceEsta.nextElementSibling; // retorna o elemento imediatamente após o elemento especificado
+
+        //acessar o terceiroFilho a partir de pai
+        const terceiroFiho2 = pai.lastElementChild.previousElementSibling; // lasElementChild retorna o ultimo elemento filho e previousElementSibling retorna o elemento anterior ao elemento especificado
+        
+    </script>
+</body>
+</html>
