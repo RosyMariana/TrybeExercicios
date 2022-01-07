@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <h1>Formulário de cadastro de currículo</h1>
+    <p> Por favor preencha os dados abaixo: </p>
+</header>
+
+<body>
+    <form id="formulario">
+        <div class="formulario-Class">
+            <fieldset>
+                <div class="dados-pessoais">
+                    <label for="name"> Nome:</label>
+                    <input type="text" name="name" id="nome" maxlength="40" required></input>
+                </div>
+                <div class="dados-pessoais">
+                    <label for="email"> Email:</label>
+                    <input type="email" name="email" id="email" maxlength="60" required></input>
+                </div>
+                <div class="dados-pessoais">
+                    <label for="cpf"> CPF:</label>
+                    <input type="text" name="cpf" id="cpf" maxlength="11" required></input>
+                </div>
+                <div class="dados-pessoais">
+                    <label for="endereço">Endereço:</label>
+                    <input type="text" name="endereço" id="endereço" maxlength="300" required></input>
+                </div>
+                <div class="dados-pessoais">
+                    <label for="cidade"> Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" maxlength="100" required></input>
+                </div>
+                <div class="dados-pessoais">
+                    <label for="estado"> Estado:</label>
+                    <select name="estado" id="estado" required>
+                        <option disabled selected value>Selecione o Estado</option>
+                    </select>
+                </div>
+                <div class="dados-pessoais">
+                    <label for="tipo"> Tipo de imovel:</label>
+                    <input type="radio" name="tipo" id="casa" value="casa" required></input>
+                    <span>Casa</span>
+                    <input type="radio" name="tipo" id="apartamento" value="apartamento" required></input>
+                    <span>Apartamento</span>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <div class="dados-pessoais">
+                    <label for="resumo">Resumo do curriculo</label>
+                    <p></p>
+                    <textarea id="resumo" name="resumo" maxlenght="1000" cols="100" rows="20" required></textarea>
+                </div>
+                <div class = "dados-pessoais">
+                    <label for = "cargo"> Cargo: </label>
+                    <input type = "text" name = "cargo" id = "cargo" maxlength="40" required> 
+
+                </div>
+                <div class = "dados-pessoais">
+                    <label for = "data"> Data de Início: </label>
+                    <input type = "text" name = "data" id = "data" value = "" required> 
+
+                </div>
+                <div class = "dados-pessoais">
+                    <label for = "Desc-cargo"> Descriçao do cargo: </label>
+                    <input type = "text" name = "Desc-cargo" id = "Desc-cargo" maxlength="500" required> 
+
+                </div>
+            </fieldset>
+            <button class = "submeter" type = "submit">Enviar</button>
+            <button class = "limpar" type = "button">Limpar</button>
+
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
