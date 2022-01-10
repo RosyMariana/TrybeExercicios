@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @media screen and (max-width: 500px) {
+      body{
+          background-color: coral;
+          font-family: sans-serif;
+      }
+      .container {
+        flex-direction: column;
+      }
+    
+      p {
+        padding: 0 5px;
+        line-height: 1.5em;
+      }
+  }
+  @media screen and (min-width: 500px) {
+      body{
+          background-color: darkcyan;
+      }
+      .container {
+        flex-wrap: wrap;
+      }
+  }
+  @media screen and (min-width: 1020px) {
+      body{
+          background-color: darkred;
+        
+        }
+        .container {
+            flex-wrap: wrap;
+          }
+  }
