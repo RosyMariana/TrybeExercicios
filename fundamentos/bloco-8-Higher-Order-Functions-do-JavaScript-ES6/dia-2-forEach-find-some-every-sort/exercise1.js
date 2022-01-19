@@ -61,46 +61,54 @@ const books = [
     },
   ];
   
-  function authorBornIn1947() {
-    return books.find((pessoa) => pessoa.author.birthYear === 1947).author.name;
-  }
+//   function authorBornIn1947() {
+//     return books.find((pessoa) => pessoa.author.birthYear === 1947).author.name;
+//   }
 
-  console.log(authorBornIn1947())
+//   console.log(authorBornIn1947())
 
-  function smallerName() {
-    let nameBook;
-       books.forEach((book) => {
-           if(!nameBook || book.name.length < nameBook.length){
-               nameBook = book.name;
-           }
-       });
-    return nameBook;
-  }
+//   function smallerName() {
+//     let nameBook;
+//        books.forEach((book) => {
+//            if(!nameBook || book.name.length < nameBook.length){
+//                nameBook = book.name;
+//            }
+//        });
+//     return nameBook;
+//   }
 
-  console.log(smallerName())
+//   console.log(smallerName())
 
  
-  function getNamedBook() {
-    return books.find((livro) => livro.name.length === 26);
+//   function getNamedBook() {
+//     return books.find((livro) => livro.name.length === 26);
+//   }
+
+//   console.log(getNamedBook())
+
+//   function booksOrderedByReleaseYearDesc() {
+//     return books.sort((data1, data2) => data2.releaseYear - data1.releaseYear);
+//   }
+
+//   console.log(booksOrderedByReleaseYearDesc());
+
+
+// function everyoneWasBornOnSecXX() {
+//  return books.every((book) => ( book.author.birthYear > 1900 && book.author.birthYear <= 2000));
+// }
+
+// console.log(everyoneWasBornOnSecXX())
+
+// function someBookWasReleaseOnThe80s() {
+//     return books.some((book) => book.releaseYear >= 1980 && book.releaseYear <= 1989);
+//   }
+
+//   console.log(someBookWasReleaseOnThe80s());
+
+function authorUnique() {
+    return books.every((book) =>
+      !books.some((bookSome) =>
+        (bookSome.author.birthYear === book.author.birthYear)
+        && (bookSome.author.name !== book.author.name)));
   }
-
-  console.log(getNamedBook())
-
-  function booksOrderedByReleaseYearDesc() {
-    return books.sort((data1, data2) => data2.releaseYear - data1.releaseYear);
-  }
-
-  console.log(booksOrderedByReleaseYearDesc());
-
-
-function everyoneWasBornOnSecXX() {
- return books.every((book) => ( book.author.birthYear > 1900 && book.author.birthYear <= 2000));
-}
-
-console.log(everyoneWasBornOnSecXX())
-
-function someBookWasReleaseOnThe80s() {
-    return books.some((book) => book.releaseYear >= 1980 && book.releaseYear <= 1989);
-  }
-
-  console.log(someBookWasReleaseOnThe80s())
+  console.log(authorUnique())
